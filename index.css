@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #050505;
+    color: #fff;
+}
+.header1{
+    border-bottom: solid 2px #ff6600;
+    display: flex;
+    justify-content: space-between;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropicon { 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ff6600;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.language{
+    font-size: 24px;
+    color: #ff6600;
+}
+.search{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+.search:hover{
+    color: #ff6600;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.logo-image{
+    height: 80px;
+    border-radius: 100%;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 30px;
+}
+.navbar-link1:hover{
+    color: #ff6600;
+}
+.navbar-link2:hover{
+    color: #ff6600;
+}
+.navbar-link3:hover{
+    color: #ff6600;
+}
+.navbar-link4:hover{
+    color: #ff6600;
+}
+.navbar-link5:hover{
+    color: #ff6600;
+}
+.navbar-link1, .navbar-link2, .navbar-link3, .navbar-link4, .navbar-link5 {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+.shop-finder{
+    padding: 10px 30px 10px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ff6600;
+    color: white;
+    border: #ff6600;
+}
+.locator{
+    padding: 0 10px;
+    font-size: 24px;
+}
+
+
+.first-section{
+    background-image: url('image/BMW-HP5-homebanner3.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    height: 500px;
+    filter: drop-shadow(20);
+}
+.first-section-text {
+    font-size: 36px;
+    color: black;
+    padding: 30px;
+}
+.first-section-text1{
+    font-size: 45px;
+    color: rgb(12, 12, 82);
+    
+}
+.first-section-text2{
+    font-size: 25px;
+    color: rgb(12, 12, 122);
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.hero-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    
+}
+
+.part2{
+    max-width: 100%;
+    height: 350px;
+}
+.part3{
+    display: grid;
+    grid-template-columns: 50fr 50fr;
+}
+.img1{
+    width: 100%;
+    height: 450px;
+}
+.img2{
+    width: 100%;
+    height: 450px;
+}
+.image-container {
+    position: relative; 
+  }
+  .grid1 {
+    position: relative; 
+  }
+  
+  .text-overlay {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px; 
+    color: #ff6600; 
+    width: 100%; 
+    height: 100%;
+    font-size: 50px; 
+    font-weight: bold;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    opacity: 2; 
+  }
+  .image-container:hover {
+    transform: scale(1.05); 
+  }
+  
+  .image-container:hover .text-overlay {
+    opacity: 1;
+  }  
+
+
+.search{
+    padding: 20px;
+    background-color: #333;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px 0 0 15px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+.wheels-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.latest-promotions h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.latest-promotions p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.latest-promotions a {
+    display: inline-block;
+    background-color: #3498db;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.latest-promotions a:hover {
+    background-color: #258cd1;
+}
+
+.animated-tire{
+    overflow: hidden;
+}
+.animated-tire img {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 10px;
+    right: 50px;
+    animation: tireSpin 4s linear infinite;
+    border-radius: 100%;
+}
+
+@keyframes tireSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 25fr 24fr 17fr 17fr 17fr;
+    font-family: calibri;
+    font-size: 16px;
+    border-top: 2px solid #ff6600;
+    background-color: #333;
+    color: #ff6600;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.social-icons {
+    font-size: 18px;
+    padding: 20px;
+}
+.social-icons :hover{
+    color: #ff6600;
+}
+.instagram{
+    padding: 10px;
+    color: rgb(165, 145, 145);
+}
+.facebook{
+    padding: 10px;
+    color: rgb(165, 145, 145);
+}
+.twitter{
+    padding: 10px;
+    color: rgb(165, 145, 145);
+}
+.copyright {
+    font-size: 13px;
+    padding: 10px;
+}
+.contact {
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 10px;
+} 
+.address{
+    font-size: 15px;
+    padding: 10px;
+}
+.add{
+    font-size: 15px;
+    padding: 10px;
+}
+.mobile{
+    font-size: 15px;
+    padding: 10px;
+}
+.hello{
+    font-size: 13px;
+    padding: 10px;
+}
+.account {
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 10px;
+}
+.acc{
+    padding: 10px;
+    font-size: 15px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+  }
