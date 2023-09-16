@@ -1,0 +1,42 @@
+@media (max-width:38em) { 
+    .one{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+
+    .content h1{
+        font-size: 3rem;
+        margin-top: 5rem;
+        
+    }
+    .content p{
+        font-size: 15px;
+        
+    }
+    .imag{
+        width: 100rem;
+    }
+    .conten h1{
+        font-size: 5rem;
+        width: 32rem;
+        margin-top: 0;
+    }
+    .gg{
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .gh{
+        width:20rem ;
+        height: 20rem;
+    }
+    h5{
+        font-size: 0.3rem;
+    }
+    img{
+        width: 110rem;
+        height: 70rem;
+    }
+}
