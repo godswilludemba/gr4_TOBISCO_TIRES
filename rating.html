@@ -24,23 +24,15 @@
     </div>
     <input class="rating-submit"type="submit" value="Submit">
     </form>
-      <!-- New section for uploading pictures, names, and write-ups -->
-    <section class="rating-upload-section"> <!-- Corrected class name -->
+    <section class="rating-upload-section">
       <h2 class="rating-upload-heading">Upload Your Feedback</h2>
       <p class="rating-upload-instructions">Share your thoughts by uploading pictures, your name, and a write-up to describe our business performance.</p>
-      <form action="" class="rating-upload-form"> <!-- Corrected class name -->
-        <!-- Input for uploading pictures -->
-        <input class="rating-input-file"  type="file" id="rating-picture-upload" name="rating-picture" accept="image/*"> <!-- Corrected name attribute -->
-    
-        <!-- Input for entering your name -->
-        <label class="rating-label" for="rating-name">Your Name:</label> <!-- Corrected for attribute -->
+      <form action="" class="rating-upload-form">
+        <input class="rating-input-file"  type="file" id="rating-picture-upload" name="rating-picture" accept="image/*">
+        <label class="rating-label" for="rating-name">Your Name:</label>
         <input type="text" id="rating-name" name="rating-name" class="rating-input-text" required>
-    
-        <!-- Input for writing feedback -->
-        <label class="rating-label" for="rating-feedback">Write Your Feedback:</label> <!-- Corrected for attribute -->
+        <label class="rating-label" for="rating-feedback">Write Your Feedback:</label>
         <textarea id="rating-feedback" name="rating-feedback" rows="4" class="rating-textarea" required></textarea>
-    
-        <!-- Submit button for uploading feedback -->
         <input class="rating-upload-btn" type="submit" value="Upload Feedback">
       </form>
     </section>
@@ -56,7 +48,7 @@
   
 
 
-<script>
+<!-- <script>
 document.addEventListener("DOMContentLoaded", function () {
   const btns = document.querySelectorAll(".rating-btn");
   const valSpan = document.querySelector(".val");
@@ -135,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
   showSection(form);
 });
 
-</script>
+</script> -->
 
 </body>
 
