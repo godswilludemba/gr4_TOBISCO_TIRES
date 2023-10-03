@@ -9,8 +9,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
 }
-
-header {
+/* NavBar starts here */
+.header {
     background-color: #050505;
     color: #fff;
 }
@@ -119,8 +119,9 @@ header {
     padding: 0 10px;
     font-size: 24px;
 }
+/* NavBar ends here */
 
-
+/* Hero Section */
 .first-section{
     background-image: url('image/BMW-HP5-homebanner3.jpg');
     background-size: cover;
@@ -154,6 +155,38 @@ header {
     font-weight: bold;
     border-radius: 5px;
     
+}
+/* Hero section ends here */
+
+
+
+/* landing page second section */
+.search{
+    padding: 20px;
+    background-color: #333;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px 0 0 15px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 .part2{
@@ -204,33 +237,7 @@ header {
   }  
 
 
-.search{
-    padding: 20px;
-    background-color: #333;
-}
-.search-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.search-bar input[type="text"] {
-    width: 70%;
-    padding: 10px;
-    border: none;
-    border-radius: 15px 0 0 15px;
-    font-size: 16px;
-}
-
-.search-bar button {
-    padding: 10px 20px;
-    background-color: #ff6600;
-    border: none;
-    border-radius: 0 15px 15px 0;
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px;
-}
 .wheels-section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -263,6 +270,9 @@ header {
     background-color: #258cd1;
 }
 
+
+
+/* animated tirespin starts here */
 .animated-tire{
     overflow: hidden;
 }
@@ -280,7 +290,11 @@ header {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+/* animated tirespin ends here */
 
+
+
+/* footer starts here */
 .footer{
     display: grid;
     grid-template-columns: 25fr 24fr 17fr 17fr 17fr;
@@ -350,3 +364,162 @@ a {
     text-decoration: none;
     color: inherit;
   }
+/* footer ends here */
+
+
+
+/* rating styling starts here*/
+  :root{
+   --rating-Orange: hsl(25, 63%, 82%);
+  --rating-White: hsl(0, 0%, 100%);
+  }
+  
+    .rating-body{
+      background-color:rgb(8, 6, 6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+  .rating-main{
+  width: 400px;
+  background-color: #333;
+  border-radius: 20px;
+  padding:  30px;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+  box-shadow: 0px 4px 10px #ff6600;
+  
+  }
+  .rating-form{
+    gap:30px;
+  }
+  .rating-form .rating-text{
+    color: var(--rating-White);
+    padding: 20px 0;
+    font-size: 28px;
+  }
+  .rating-form .rating-p{
+    padding: 5px 0;
+  }
+  .rating-form .rating-input-div{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .rating-btn {
+    margin: 20px 10px;
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    font-size: 1.1rem;
+    border-radius: 100%;
+    background-color: #ff6600;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  .rating-btn:hover {
+    background-color: #ff6600;
+    color: whitesmoke;
+  }
+  .rating-submit {
+    margin: 20px 0;
+    width: 100%;
+    border-radius: 50px;
+    height: 50px;
+    text-transform: uppercase;
+    font-size: 1.15rem;
+    font-weight: 400;
+    background-color: #ff6600;
+    color: var(--rating-White);
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  .rating-submit:hover {
+    background-color: #ff6600;
+    color: white;
+  }
+  .rating-form-figure {
+    padding: 10px 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rating-star{
+    height: 70px;
+    width: 70px;
+    margin-left: 270px;
+  }
+  .rating-upload-section {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #333;
+  }
+  .rating-upload-selected {
+    padding: 10px;
+    background-color: white;
+    color: white;
+    width: 170px;
+    border-radius: 50px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .rating-upload-heading {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #ff6600;
+  }
+  .rating-upload-instructions {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .rating-upload-form {
+    text-align: left;
+  }
+  .rating-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+  .rating-input-file,.rating-input-text,.rating-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .rating-upload-btn {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 72px;
+  }
+  .thank-you-section {
+    display: none;
+    text-align: center;
+  }
+  .thank-you-text {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--rating-White);
+    margin-top: 20px;
+  }
+  .thank-you-para {
+    margin: 20px auto;
+    font-size: 18px;
+  }
+  
+    /* rating styling ends here*/
