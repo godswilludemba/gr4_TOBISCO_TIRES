@@ -3,35 +3,36 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
 }
 /* NavBar starts here */
-.header {
+.navbar-header {
     background-color: #050505;
     color: #fff;
 }
-.header1{
+.navbar-header1{
     border-bottom: solid 2px #ff6600;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-.dropdown {
+.language-dropdown {
     position: relative;
     display: inline-block;
 }
 
-.dropicon { 
+.language-dropicon { 
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    margin-left: 10px;
+    margin-top: 6px;
 }
 
-.dropdown-content {
+.language-dropdown-content {
     display: none;
     position: absolute;
     background-color: #ff6600;
@@ -40,33 +41,35 @@ body {
     z-index: 1;
 }
 
-.dropdown-content a {
+.language-dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-.dropdown-content a:hover {
+.language-dropdown-content a:hover {
     background-color: #3498db;
     color: white;
 }
 
-.dropdown:hover .dropdown-content {
+.language-dropdown:hover .language-dropdown-content {
     display: block;
 }
-.language{
-    font-size: 24px;
+.language-select{
+    font-size: 30px;
     color: #ff6600;
 }
-.search{
+.navbar-search{
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    font-size: 18px;
-    padding: 10px 20px;
+    font-size: 20px;
+    margin-right: 25px;
+    margin-top: 6px;
+    border-radius: 100%;
 }
-.search:hover{
+.navbar-search:hover{
     color: #ff6600;
 }
 .navbar{
@@ -77,7 +80,7 @@ body {
     padding: 10px 20px;
 }
 
-.logo-image{
+.navbar-logo-image{
     height: 80px;
     border-radius: 100%;
 }
@@ -101,13 +104,16 @@ body {
 .navbar-link5:hover{
     color: #ff6600;
 }
-.navbar-link1, .navbar-link2, .navbar-link3, .navbar-link4, .navbar-link5 {
+.navbar-link6:hover{
+  color: #ff6600;
+}
+.navbar-link1, .navbar-link2, .navbar-link3, .navbar-link4, .navbar-link5, .navbar-link6 {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
     font-size: 15px;
 }
-.shop-finder{
+.navbar-shop-finder{
     padding: 10px 30px 10px 30px;
     font-size: 18px;
     font-weight: bold;
@@ -115,14 +121,14 @@ body {
     color: white;
     border: #ff6600;
 }
-.locator{
+.navbar-locator{
     padding: 0 10px;
     font-size: 24px;
 }
 /* NavBar ends here */
 
 /* Hero Section */
-.first-section{
+.hero-first-section{
     background-image: url('image/BMW-HP5-homebanner3.jpg');
     background-size: cover;
     background-position: center;
@@ -130,21 +136,21 @@ body {
     height: 500px;
     filter: drop-shadow(20);
 }
-.first-section-text {
+.hero-first-section-text {
     font-size: 36px;
     color: black;
     padding: 30px;
 }
-.first-section-text1{
-    font-size: 45px;
+.hero-first-section-text1{
+    font-size: 50px;
     color: rgb(12, 12, 82);
     
 }
-.first-section-text2{
-    font-size: 25px;
+.hero-first-section-text2{
+    font-size: 30px;
     color: rgb(12, 12, 122);
     padding-top: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
 }
 .hero-button {
     display: inline-block;
@@ -161,17 +167,17 @@ body {
 
 
 /* landing page second section */
-.search{
+.landing-search{
     padding: 20px;
     background-color: #333;
 }
-.search-bar {
+.landing-search-bar {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.search-bar input[type="text"] {
+.landing-search-bar-input[type="text"] {
     width: 70%;
     padding: 10px;
     border: none;
@@ -179,7 +185,7 @@ body {
     font-size: 16px;
 }
 
-.search-bar button {
+.landing-search-bar-button {
     padding: 10px 20px;
     background-color: #ff6600;
     border: none;
@@ -189,30 +195,30 @@ body {
     font-size: 16px;
 }
 
-.part2{
+.landing-part2{
     max-width: 100%;
     height: 350px;
 }
-.part3{
+.landing-part3{
     display: grid;
     grid-template-columns: 50fr 50fr;
 }
-.img1{
+.landing-img1{
     width: 100%;
     height: 450px;
 }
-.img2{
+.landing-img2{
     width: 100%;
     height: 450px;
 }
-.image-container {
+.landing-image-container {
     position: relative; 
   }
-  .grid1 {
+  .landing-grid1 {
     position: relative; 
   }
   
-  .text-overlay {
+  .landing-text-overlay {
     position: absolute; 
     top: 0; 
     left: 0; 
@@ -228,16 +234,16 @@ body {
     align-items: center; 
     opacity: 2; 
   }
-  .image-container:hover {
+  .landing-image-container:hover {
     transform: scale(1.05); 
   }
   
-  .image-container:hover .text-overlay {
+  .landing-image-container:hover .text-overlay {
     opacity: 1;
   }  
 
 
-
+/* 
 .wheels-section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -268,15 +274,15 @@ body {
 
 .latest-promotions a:hover {
     background-color: #258cd1;
-}
+} */
 
 
 
 /* animated tirespin starts here */
-.animated-tire{
+.landing-animated-tire{
     overflow: hidden;
 }
-.animated-tire img {
+.landing-animated-tire img {
     width: 100px;
     height: 100px;
     position: fixed;
@@ -307,56 +313,56 @@ body {
     text-align: center;
 }
 
-.social-icons {
+.footer-social-icons {
     font-size: 18px;
     padding: 20px;
 }
-.social-icons :hover{
+.footer-social-icons :hover{
     color: #ff6600;
 }
-.instagram{
+.footer-instagram{
     padding: 10px;
     color: rgb(165, 145, 145);
 }
-.facebook{
+.footer-facebook{
     padding: 10px;
     color: rgb(165, 145, 145);
 }
-.twitter{
+.footer-twitter{
     padding: 10px;
     color: rgb(165, 145, 145);
 }
-.copyright {
+.footer-copyright {
     font-size: 13px;
     padding: 10px;
 }
-.contact {
+.footer-contact {
     font-weight: bolder;
     font-size: 18px;
     padding: 10px;
 } 
-.address{
+.footer-address{
     font-size: 15px;
     padding: 10px;
 }
-.add{
+.footer-add{
     font-size: 15px;
     padding: 10px;
 }
-.mobile{
+.footer-mobile{
     font-size: 15px;
     padding: 10px;
 }
-.hello{
+.footer-hello{
     font-size: 13px;
     padding: 10px;
 }
-.account {
+.footer-account {
     font-weight: bolder;
     font-size: 18px;
     padding: 10px;
 }
-.acc{
+.footer-acc{
     padding: 10px;
     font-size: 15px;
 }
