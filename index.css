@@ -529,3 +529,69 @@ a {
   }
   
     /* rating styling ends here*/
+
+
+
+/* testimonial section starts here */
+ .testimonial-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  background-color: #050505;
+  background-image: url(image/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Style for each testimonial box */
+.testimonial-box {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-box:hover {
+  transform: scale(1.05);
+}
+
+/* Style for testimonial photos */
+.testimonial-photo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Style for testimonial names */
+.testimonial-text h1,
+.testimonial-text h2,
+.testimonial-text h3,
+.testimonial-text h4,
+.testimonial-text h5 {
+  font-size: 25px;
+  margin: 0;
+  color: #ff6600;
+}
+
+/* Style for verified label */
+.testimonial-verified {
+  color: #050505;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* Style for testimonial paragraphs */
+.testimonial-paragraph {
+  font-size: 1rem;
+  margin-top: 15px;
+  line-height: 1.4;
+  color: #fff;
+}
+
+/* testimonial section ends here */
