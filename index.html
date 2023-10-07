@@ -7,6 +7,7 @@
     <title>TOBISCO TIRES</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="quary.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
   <body>
@@ -30,14 +31,19 @@
             <div class="navbar-logo">
                 <a href="index.html"><img class="navbar-logo-image" src="image/Free_Sample_By_Wix.jpg" alt="Tire Shop Logo"></a>
             </div>
-            <div class="navbar-links">
-                <a title="Home" class="navbar-dropdown-menu navbar-link1" href="index.html">Home</a>
-                <a title="Tires" class="navbar-link2" href="#">Tires</a>
-                <a title="Services" class="navbar-link3" href="#">Services</a>
-                <a title="About Us" class="navbar-link4" href="#">About Us</a>
-                <a title="News" class="navbar-link5" href="#">News</a>
-                <a title="Testimonial" class="navbar-link6" href="testimonial.html">Testimonial</a>
-            </div>
+            <button class="mobile-nav-toggle" aria-controls="primarynav" aria-expanded="false">
+              <i class="fas fa-bars"></i>
+              <i class="fas fa-times"></i>
+              <!-- <span class="sr-only" title="Menu"></span> -->
+          </button>
+            <ul id="primarynav" data-visible= "false" class="navbar-links">
+                <li><a title="Home" class="navbar-link1" href="index.html">Home</a></li>
+                <li><a title="Tires" class="navbar-link2" href="#">Tires</a></li>
+                <li><a title="Services" class="navbar-link3" href="#">Services</a></li>
+                <li><a title="About Us" class="navbar-link4" href="#">About Us</a></li>
+                <li><a title="News" class="navbar-link5" href="#">News</a></li>
+                <li><a title="Testimonial" class="navbar-link6" href="testimonial.html">Testimonial</a></li>
+            </ul>
             <div>
               <button class="navbar-shop-finder">Outlets -<i class="fa-sharp fa-solid fa-location-dot fa-beat-fade locator navbar-locator"></i></button>
             </div>
@@ -152,5 +158,12 @@
           <p class="footer-acc">Privacy & terms</p>
       </div>
   </footer>
+
+  <script src="script.js"></script>
+
+
   </body>
 </html>
+
+
+

@@ -1,24 +1,36 @@
 @media (max-width: 768px) {
+    /* navbar starts here */
     .navbar-header{
         flex-direction: column;
         align-items: center;
     }
     .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
+        display: flex;
 
-    .navbar-links, .navbar-shop-finder{
-        margin-top: 20px; font-size: 15px;
     }
-
+    .navbar-logo-image{
+        width: 60px;
+        height: 60px;
+    }
+    .navbar-shop-finder{
+        /* margin-right: 100px;
+        width: 160px;
+        height: 60px; */
+        display: none;
+    }
+/* 
     .navbar-link1, .navbar-link2, .navbar-link3, .navbar-link4, .navbar-link5 {
         margin-right: 0;
         margin-bottom: 10px;
     }
    .navbar-link6{
     display: none;
-   }
+   } */
+
+   /* navbar ends here */
+
+
+   /* hero section starts here */
    .hero-first-section {
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,6 +50,13 @@
     .hero-button{
         font-size: 20px;
     }
+
+
+    /* hero section edns here */
+
+
+
+    /* landing page starts here  */
     .landing-part2{
         height: 200px;
     }
@@ -57,14 +76,76 @@
     .landing-animated-tire{
         display: none;
     }
+    /* landing page ends here */
+
+
+    /* footer section */
     .footer{
         display: flex;
         flex-direction: column;
     }
+    /* footer ends here */
 }
 
+
+/* testimonial section */
 @media (max-width: 768px) {
     .testimonial-container {
       grid-template-columns: 1fr; /* Display testimonials in a single column on small screens */
     }
   }
+/* testimonial section ends here */
+
+
+/* mobile toggle for responsive navbar */
+@media (max-width: 35em){
+    #primarynav{
+        gap: 2em;
+        
+        position: fixed;
+        z-index: 1000;
+        inset: 0 0 0 30%;
+        
+        padding: min(30vh, 10rem) 2rem;
+        flex-direction: column;
+  
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+        
+    }
+    .navbar-link1, .navbar-link2, .navbar-link3, .navbar-link4, .navbar-link5, .navbar-link6{
+        color: #ff6600;
+        font-size: 20px;
+        text-shadow: none;
+    }
+    .mobile-nav-toggle{
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        background-color: inherit;
+        width: 2rem;
+        border: 0;
+        aspect-ratio: 1 / 1;
+        top: 70pxpx;
+        right: 2rem;
+        color: #ff6600;
+        font-size: 40px;
+  
+  
+    }
+  
+  }
+  @media (min-width: 35em) and (max-width: 55em) {
+    #primarynav a > span [aria-hidden]{
+        background: red;
+    }
+  }
+  @media (min-width: 35em){
+    .primarynav{
+        gap: 3rem;
+        padding-block: 2rem;
+        padding-inline: clamp(3rem, 5vw, 10rem);
+    }
+  }
+
+  /* mobile toggle ends here */

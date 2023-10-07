@@ -84,10 +84,27 @@ body {
     height: 80px;
     border-radius: 100%;
 }
-
+.mobile-nav-toggle{
+  display: none;
+}
 .navbar-links {
     display: flex;
-    gap: 30px;
+    gap: 32px;
+    display: flex;
+    list-style: none;
+}
+@supports(backdrop-filter: blur(50px)){
+  #primarynav{
+      backdrop-filter: blur(50px);
+  }
+}
+.mobile-nav-toggle .fa-times {
+  display: none;
+}
+
+#primarynav[data-visible = "true"]{
+  transform: translateX(0%);
+  
 }
 .navbar-link1:hover{
     color: #ff6600;
@@ -595,3 +612,7 @@ a {
 }
 
 /* testimonial section ends here */
+
+
+
+
