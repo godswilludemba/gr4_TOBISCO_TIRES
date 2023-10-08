@@ -3,17 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="image/Free_Sample_By_Wix.jpg">
     <title>TOBISCO TIRES</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="quary.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
   <body>
-    <header class="header">
-      <div class="header1">
-        <div class="dropdown">
-        <i class="fa-solid fa-earth-africa language dropicon" title="language"></i>        
-        <div class="dropdown-content">
+    <header class="navbar-header">
+      <div class="navbar-header1">
+        <div class="language-dropdown">
+        <i class="fa-solid fa-earth-africa language-select language-dropicon" title="language"></i>        
+        <div class="language-dropdown-content">
             <a href="#">English</a>
             <a href="#">Igbo</a>
             <a href="#">Yoruba</a>
@@ -21,82 +23,127 @@
         </div>
     </div>
     <div>
-      <a href="#"><i class="fa-solid fa-magnifying-glass search" title="Search"></i></a>
+      <a href="#"><i class="fa-solid fa-magnifying-glass navbar-search" title="Search Page"></i></a>
     </div>
       </div>
       
         <nav class="navbar">
-            <div class="logo">
-                <img class="logo-image" src="image/Free_Sample_By_Wix.jpg" alt="Tire Shop Logo">
+            <div class="navbar-logo">
+                <a href="index.html"><img class="navbar-logo-image" src="image/Free_Sample_By_Wix.jpg" alt="Tire Shop Logo"></a>
             </div>
-            <div class="navbar-links">
-                <a class="dropdown-menu navbar-link1" href="#">Home</a>
-                <a class="navbar-link2" href="#">Tires</a>
-                <a class="navbar-link3" href="#">Services</a>
-                <a class="navbar-link4" href="#">About Us</a>
-                <a class="navbar-link5" href="#">News</a>
-            </div>
+            <button class="mobile-nav-toggle" aria-controls="primarynav" aria-expanded="false">
+              <i class="fas fa-bars"></i>
+              <i class="fas fa-times"></i>
+              <!-- <span class="sr-only" title="Menu"></span> -->
+          </button>
+            <ul id="primarynav" data-visible= "false" class="navbar-links">
+                <li><a title="Home" class="navbar-link1" href="index.html">Home</a></li>
+                <li><a title="Tires" class="navbar-link2" href="#">Tires</a></li>
+                <li><a title="Services" class="navbar-link3" href="#">Services</a></li>
+                <li><a title="About Us" class="navbar-link4" href="#">About Us</a></li>
+                <li><a title="News" class="navbar-link5" href="rating.html">Rate Us</a></li>
+                <li><a title="Testimonial" class="navbar-link6" href="testimonial.html">Testimonial</a></li>
+            </ul>
             <div>
-              <button class="shop-finder">Outlets -<i class="fa-sharp fa-solid fa-location-dot fa-beat-fade locator"></i></button>
+              <button class="navbar-shop-finder">Outlets -<i class="fa-sharp fa-solid fa-location-dot fa-beat-fade locator navbar-locator"></i></button>
             </div>
         </nav>
     </header>
 
 
-
-    
-
-    <section class="hero">
-      <div class="first-section">
-        <div class="first-section-text">
-          <h1 class="first-section-text1">Welcome to TOBISCO TIRES</h1>
-          <p class="first-section-text2">Your Journey, Our Tires: Drive with Confidence</p>
-          <a href="#" class="hero-button">Shop Now</a>
+    <section class="hero-slideshow-container">
+      <div class="hero-mySlides fade">
+        <div class="hero-first-section">
+          <div class="hero-first-section-text">
+            <h1 class="hero-first-section-text1">Welcome to TOBISCO TIRES</h1>
+            <p class="hero-first-section-text2">Your Journey, Our Tires: Drive with Confidence</p>
+            <a href="#" class="hero-button">Shop Now</a>
+          </div>
+        </div> 
+      </div>
+      <div class="hero-mySlides fade">
+        <img src="image/tire thread.jpg" alt="Hero Slide 1" class="hero-image1">
+        <div class="hero-hero-first-section-text">
+            <h1 class="hero-hero-first-section-text1">TOBISCO TIRES</h1>
+            <p class="hero-hero-first-section-text2">"Sustainably improving mobility for people and goods” is part of Tobisco Tires’ purpose. That commitment to our customers and to more sustainable mobility is an integral part of our historic business of marketing and sales of quality tires."</p>
         </div>
-      </div>        
-    </section>
-    
-    <section class="search">
-      <div class="search-bar">
-      <input type="text" placeholder="Search for tires...">
-      <button type="submit">Search</button>
+    </div>
+      <div class="hero-mySlides fade">
+          <div class="hero-news-article">
+              <h2 class="hero-news-title">Exciting Partnership with Leading Tire Manufacturer</h2>
+              <p class="hero-news-date">Published on October 10, 2023</p>
+              <img src="image/westlake.png" alt="Hero Partner Logo" class="hero-news-image1">
+              <p class="hero-news-content">We are thrilled to announce our partnership with one of the world's leading tire manufacturers, TireCo. This strategic alliance allows us to offer our customers an even wider range of high-quality tires to choose from. TireCo is known for its cutting-edge technology and commitment to safety and performance, making them the perfect fit for Tobisco Tires. We look forward to serving you with these exceptional products.</p>
+              <a href="#" class="hero-read-more-link">Read More</a>
+          </div>
+      </div>
+      <div class="hero-mySlides fade">
+          <div class="hero-news-article">
+              <h2 class="hero-news-title">Tobisco Tires Featured in Prestigious Auto Magazine</h2>
+              <p class="hero-news-date">Published on October 15, 2023</p>
+              <img src="image/award banner.jpg" alt="Hero Magazine Cover" class="hero-news-image2">
+              <p class="hero-news-content">We are proud to share that Tobisco Tires has been featured in the latest issue of Auto Excellence, a renowned automotive magazine. The article highlights our dedication to innovation, sustainability, and customer satisfaction. This recognition is a testament to the hard work and commitment of our team. We extend our heartfelt thanks to our valued customers for choosing Tobisco Tires.</p>
+              <a href="#" class="hero-read-more-link">Read More</a>
+          </div>            
+      </div>
+
+      <!-- Navigation buttons -->
+      <button class="hero-prev" onclick="plusSlides(-1)">&#10094;</button>
+      <button class="hero-next" onclick="plusSlides(1)">&#10095;</button>
+
+      <!-- Navigation dots -->
+      <div style="text-align:center">
+          <span class="hero-dot"></span>
+          <span class="hero-dot"></span>
+          <span class="hero-dot"></span>
+          <span class="hero-dot"></span>
+      </div>
+  </section>
+
+
+
+
+    <section class="landing-search">
+      <div class="landing-search-bar">
+      <input class="landing-search-bar-input" type="text" placeholder="Search for tires...">
+      <button class="landing-search-bar-button" type="submit">Search</button>
   </div>
     </section>
-    <section class="second-section">
-      <img class="part2" src="image/icrcpwvw.png" alt="">
+    <section class="landing-second-section">
+      <img class="landing-part2" src="image/icrcpwvw.png" alt="">
     </section>
-    <section class="part3">
-      <div class="image-container">
-        <div class="grid1">
-        <figure><img class="img1" src="image/jmd0ji04.png" alt=""></figure>
-        <div class="text-overlay">
-          <a class="overlay-text" href="#">Passenger Car Tires</a>
+    <section class="landing-part3">
+      <div class="landing-image-container">
+        <div class="landing-grid1">
+        <figure><img class="landing-img1" src="image/jmd0ji04.png" alt=""></figure>
+        <div class="landing-text-overlay">
+          <a class="landing-overlay-text" href="#">Passenger Car Tires</a>
         </div>
       </div>
       </div>
-      <div class="image-container">
-        <div class="grid1">
-        <figure><img class="img2" src="image/bgth4e79.png" alt=""></figure>
-        <div class="text-overlay">
-          <a class="overlay-text" href="#">SUV Tires</a>
+      <div class="landing-image-container">
+        <div class="landing-grid1">
+        <figure><img class="landing-img2" src="image/bgth4e79.png" alt=""></figure>
+        <div class="landing-text-overlay">
+          <a class="landing-overlay-text" href="#">SUV Tires</a>
         </div>
       </div>
       </div>
     </section>
-    <section class="part3">
-      <div class="image-container">
-        <div class="grid1">
-        <figure><img class="img1" src="image/category-LT.jpg" alt=""></figure>
-        <div class="text-overlay">
-          <a class="overlay-text" href="#">Off-the-Road Tires</a>
+    <section class="landing-part3">
+      <div class="landing-image-container">
+        <div class="landing-grid1">
+        <figure><img class="landing-img1" src="image/category-LT.jpg" alt=""></figure>
+        <div class="landing-text-overlay">
+          <a class="landing-overlay-text" href="#">Off-the-Road Tires</a>
         </div>
       </div>
       </div>
-      <div class="image-container">
-        <div class="grid1">
-        <figure><img class="img2" src="image/FB_IMG_16580935533618990.jpg" alt=""></figure>
-        <div class="text-overlay">
-          <a class="overlay-text" href="#">Heavy Duty Tires</a>
+      <div class="landing-image-container">
+        <div class="landing-grid1">
+        <figure><img class="landing-img2" src="image/FB_IMG_16580935533618990.jpg" alt=""></figure>
+        <div class="landing-text-overlay">
+          <a class="landing-overlay-text" href="#">Heavy Duty Tires</a>
         </div>
       </div>
       </div>
@@ -104,50 +151,57 @@
      
 
   
-<div class="animated-tire">
+<div class="landing-animated-tire">
   <img src="image/FB_IMG_16580933089334386.jpg" alt="Animated Tire">
 </div>
 <footer class="footer">
-      <div class="first">
-      <div class="logo">
+      <div class="footer-first">
+      <div class="footer-logo">
           <h1>TOBISCO TIRES</h1>
       </div>
-      <div class="social-icons">
-          <i class="fa-brands fa-instagram instagram"></i>
-          <i class="fa-brands fa-facebook facebook"></i>
-          <i class="fa-brands fa-whatsapp twitter"></i>
+      <div class="footer-social-icons">
+          <i class="fa-brands fa-instagram footer-instagram"></i>
+          <i class="fa-brands fa-facebook footer-facebook"></i>
+          <i class="fa-brands fa-whatsapp footer-twitter"></i>
       </div>
-      <div class="copyright">
+      <div class="footer-copyright">
           copyright &copy; 2027 by Tobisco Tires, <p>Ent, All Rights reserved.</p>
       </div>
       </div>
-      <div class="second">
-          <p class="contact">Contact Us</p>
-          <p class="address">Expert Hub Software Solutions</p>
-          <p class="add">Nsukka</p>
-          <p class="mobile">+2349022414349</p><p class="hello">uokafor158@gmail.com</p> 
+      <div class="footer-second">
+          <p class="footer-contact">Contact Us</p>
+          <p class="footer-address">Expert Hub Software Solutions</p>
+          <p class="footer-add">Nsukka</p>
+          <p class="footer-mobile">+2349022414349</p><p class="footer-hello">uokafor158@gmail.com</p> 
       </div>
       
-      <div class="third">
-          <p class="account">Account</p>
-          <p class="acc"><a href="#">Create Account</a></p>
-          <p class="acc"><a href="#">Sign in</a></p>
-          <p class="acc"><a href="#">iOS app</a></p>
-          <p class="acc"><a href="#">Android app</a></p>
+      <div class="footer-third">
+          <p class="footer-account">Account</p>
+          <p class="footer-acc"><a href="#">Create Account</a></p>
+          <p class="footer-acc"><a href="#">Sign in</a></p>
+          <p class="footer-acc"><a href="#">iOS app</a></p>
+          <p class="footer-acc"><a href="#">Android app</a></p>
       </div>
-      <div class="fourth">
-          <p class="account">Comapany</p>
-          <p class="acc">About Tobisco Tires</p>
-          <p class="acc">For Business</p>
-          <p class="acc">Cart</p>
-          <p class="acc">Outlets</p>
+      <div class="footer-fourth">
+          <p class="footer-account">Company</p>
+          <p class="footer-acc">About Tobisco Tires</p>
+          <p class="footer-acc">For Business</p>
+          <p class="footer-acc">Cart</p>
+          <p class="footer-acc">Outlets</p>
       </div>
-      <div class="fifth">
-          <p class="account">Resources</p>
-          <p class="acc">Consultancy</p>
-          <p class="acc">Help Center</p>
-          <p class="acc">Privacy & terms</p>
+      <div class="footer-fifth">
+          <p class="footer-account">Resources</p>
+          <p class="footer-acc">Consultancy</p>
+          <p class="footer-acc">Help Center</p>
+          <p class="footer-acc">Privacy & terms</p>
       </div>
   </footer>
+
+  <script src="script.js"></script>
+
+
   </body>
 </html>
+
+
+

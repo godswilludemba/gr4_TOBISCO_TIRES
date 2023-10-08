@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="image/Free_Sample_By_Wix.jpg">
+  <title>Customer Review Section</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body class="rating-body">
+  <main class="rating-main">
+    <form action="" class="rating-form">
+      <figure class="rating-form-figure"> <img class="rating-star" src="./image/icon-star.svg" alt=""></figure>
+
+      <h2 class="rating-text">How was our Services?</h2>
+      <p class="rating-p">Please let us know how we performed. All feedbacks are kindly appreciated
+        to help us improve our services!</p>
+        <div class="rating-input-div">
+          <input class="rating-btn"type="button" value="1">
+      <input class="rating-btn"type="button" value="2">
+      <input class="rating-btn"type="button" value="3">
+      <input class="rating-btn"type="button" value="4">
+      <input class="rating-btn"type="button" value="5"><br>
+    </div>
+    <input class="rating-submit"type="submit" value="Submit">
+    </form>
+    <section class="rating-upload-section">
+      <h2 class="rating-upload-heading">Upload Your Feedback</h2>
+      <p class="rating-upload-instructions">Share your thoughts by uploading pictures, your name, and a write-up to describe our business performance.</p>
+      <form action="" class="rating-upload-form">
+        <input class="rating-input-file"  type="file" id="rating-picture-upload" name="rating-picture" accept="image/*">
+        <label class="rating-label" for="rating-name">Your Name:</label>
+        <input type="text" id="rating-name" name="rating-name" class="rating-input-text" required>
+        <label class="rating-label" for="rating-feedback">Write Your Feedback:</label>
+        <textarea id="rating-feedback" name="rating-feedback" rows="4" class="rating-textarea" required></textarea>
+        <input class="rating-upload-btn" type="submit" value="Upload Feedback">
+      </form>
+    </section>
+
+    <section class="thank-you-section">
+      <figure><img src="./image/illustration-thank-you.svg" alt=""></figure>
+      <h5 class="thank-you-text"> You have rated us <span class="val"></span> out of 5</h5>
+      <h2 class="thank-you-text">Thank you!</h2>
+      <p class="thank-you-para">We appreciate you taking the time to give us a rating. Please let us know how we can serve you better.
+        Remember we are always here to serve you!</p>
+    </section>
+  </main>
+  
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const btns = document.querySelectorAll(".rating-btn");
+  const valSpan = document.querySelector(".val");
+  const form = document.querySelector(".rating-form");
+  const uploadSection = document.querySelector(".rating-upload-section"); // Corrected class name
+  const section = document.querySelector(".thank-you-section"); // Corrected class name
+  const nameInput = document.getElementById("rating-name"); // Corrected ID
+  const feedbackInput = document.getElementById("rating-feedback"); // Corrected ID
+
+  let val;
+  let hasRating = false;
+  let hasUploaded = false;
+
+  // Function to show a section and hide others
+  function showSection(sectionToShow) {
+    form.style.display = "none";
+    uploadSection.style.display = "none";
+    section.style.display = "none";
+    sectionToShow.style.display = "block";
+  }
+
+  btns.forEach((element) => {
+    element.addEventListener("click", (e) => {
+      btns.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+      element.classList.add("active");
+      val = e.target.value;
+      hasRating = true;
+
+      element.style.backgroundColor = "var(--rating-Orange)";
+      element.style.color = "var(--rating-White)";
+    });
+  });
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    if (hasRating) {
+      valSpan.innerHTML = val;
+
+      // Hide the rating form and show the upload section after submitting the rating
+      form.style.display = "none";
+      uploadSection.style.display = "block"; // Show the upload section
+    } else {
+      alert("Please select a rating before proceeding.");
+    }
+  });
+
+  // Add an event listener for the upload form submission
+  uploadSection.querySelector(".rating-upload-form").addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    // Validate that name and feedback fields are not empty
+    const name = nameInput.value.trim();
+    const feedback = feedbackInput.value.trim();
+
+    if (name === "" || feedback === "") {
+      alert("Please fill in all fields before proceeding.");
+      return;
+    }
+
+    // You can handle the image upload and data submission here
+    hasUploaded = true;
+
+    // Check if both rating and upload are completed
+    if (hasRating && hasUploaded) {
+      // Hide the upload section and show the thank you section
+      uploadSection.style.display = "none";
+      section.style.display = "block"; // Show the thank you section
+    } else {
+      alert("Please complete the rating and upload before proceeding.");
+    }
+  });
+
+  // Initialize by showing only the rating form
+  showSection(form);
+});
+
+</script>
+
+</body>
+
+</html>
