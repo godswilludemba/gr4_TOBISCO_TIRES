@@ -1,35 +1,4 @@
-// let primaryNav = document.querySelector("#primarynav");
-// let navToggle = document.querySelector(".mobile-nav-toggle");
-
-// navToggle.addEventListener('click', () => {
-//   let visibility = primaryNav.getAttribute('data-visible')
-
-
-//   if(visibility ==="false"){
-//     primaryNav.setAttribute('data-visible', true);
-//     navToggle.setAttribute('aria-expanded',true);
-//   } else if (visibility === "true"){
-//     primaryNav.setAttribute('data-visible', false);
-//     navToggle.setAttribute('aria-expanded',false);
-//   }
-
-// })
-
-
-
-// const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
-// mobileNavToggle.addEventListener('click', function () {
-//     const isExpanded = this.getAttribute('aria-expanded') === 'true';
-//     this.setAttribute('aria-expanded', !isExpanded);
-    
-//     const barsIcon = this.querySelector('.fa-bars');
-//     const timesIcon = this.querySelector('.fa-times');
-    
-//     barsIcon.style.display = isExpanded ? 'inline' : 'none';
-//     timesIcon.style.display = isExpanded ? 'none' : 'inline';
-// });
-
-
+//MOBILE TOGGLE STARTS HERE//
 const primaryNav = document.querySelector("#primarynav");
 const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
 
@@ -54,4 +23,51 @@ mobileNavToggle.addEventListener('click', function () {
         timesIcon.style.display = 'inline';
     }
 });
+//MOBILE TOGGLE ENDS HERE//
+
+
+
+
+
+//HERO SECTION SLIDESHOW STARTS HERE//
+let heroSlideIndex = 1;
+showHeroSlides(heroSlideIndex);
+
+function plusSlides(n) {
+    showHeroSlides(heroSlideIndex += n);
+}
+
+function currentSlide(n) {
+    showHeroSlides(heroSlideIndex = n);
+}
+
+function showHeroSlides(n) {
+    let i;
+    const heroSlides = document.querySelectorAll(".hero-mySlides");
+    const heroDots = document.querySelectorAll(".hero-dot");
+
+    if (n > heroSlides.length) {
+        heroSlideIndex = 1;
+    }
+    if (n < 1) {
+        heroSlideIndex = heroSlides.length;
+    }
+
+    for (i = 0; i < heroSlides.length; i++) {
+        heroSlides[i].style.display = "none";
+    }
+    for (i = 0; i < heroDots.length; i++) {
+        heroDots[i].className = heroDots[i].className.replace(" hero-active", "");
+    }
+
+    heroSlides[heroSlideIndex - 1].style.display = "block";
+    heroDots[heroSlideIndex - 1].className += " hero-active";
+}
+
+// Automatically advance slides every 20 seconds
+setInterval(function() {
+    plusSlides(1);
+}, 10000);
+//HERO SECTION SLIDE ENDS HERE//
+
 

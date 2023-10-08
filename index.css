@@ -144,7 +144,10 @@ body {
 }
 /* NavBar ends here */
 
-/* Hero Section */
+
+
+/*HERO SECTION */
+
 .hero-first-section{
     background-image: url('image/BMW-HP5-homebanner3.jpg');
     background-size: cover;
@@ -156,7 +159,7 @@ body {
 .hero-first-section-text {
     font-size: 36px;
     color: black;
-    padding: 30px;
+    padding: 50px;
 }
 .hero-first-section-text1{
     font-size: 50px;
@@ -179,7 +182,156 @@ body {
     border-radius: 5px;
     
 }
-/* Hero section ends here */
+/* CSS for Hero Slideshow */
+.hero-slideshow-container {
+  position: relative;
+}
+
+.hero-mySlides {
+  display: none;
+}
+
+.hero-image1 {
+  width: 100%;
+  height: 500px;
+}
+
+.hero-hero-first-section-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-hero-first-section-text1 {
+  font-size: 50px;
+  color: rgb(12, 12, 82);
+}
+
+.hero-hero-first-section-text2 {
+  font-size: 30px;
+  color: rgb(12, 12, 122);
+  padding-top: 10px;
+}
+
+.hero-hero-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ff6600;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.hero-dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.hero-active {
+  background-color: #ff6600;
+}
+
+/* CSS for Hero News Articles */
+.hero-news-article {
+  background-color: #333;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.hero-news-title {
+  font-size: 29px;
+  color: #ff6600;
+  margin-bottom: 10px;
+}
+
+.hero-news-date {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.hero-news-image1 {
+  width: 100%;
+  height: 290px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.hero-news-image2{
+  width: 100%;
+  height: 290px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.hero-news-content {
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.hero-read-more-link {
+  display: inline-block;
+  margin-top: 5px;
+  text-decoration: none;
+  color: #ff6600;
+  font-weight: boldER;
+}
+
+.hero-read-more-link:hover {
+  text-decoration: underline;
+}
+
+
+/* Add styles for navigation buttons here */
+.hero-prev,
+.hero-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f2f2f2;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  font-size: 28px;
+  z-index: 2;
+}
+
+.hero-prev:hover,
+.hero-next:hover {
+  background-color: #ff6600;
+}
+
+.hero-prev {
+  left: 0;
+}
+
+.hero-next {
+  right: 0;
+}
+
+/*HERO ENDS HERE*/
+
+
+
+
+
 
 
 
