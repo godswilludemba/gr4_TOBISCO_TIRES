@@ -1,0 +1,6 @@
+
+@media screen and (max-width: 768px) {
+    .video-item {
+        width: calc(50% - 20px);
+    }
+}
